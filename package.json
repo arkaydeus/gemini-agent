@@ -1,0 +1,21 @@
+{
+  "name": "gemini-agent",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "ai": "^6.0.3",
+    "ai-sdk-provider-gemini-cli": "^1.5.1",
+    "duck-duck-scrape": "^2.2.7",
+    "zod": "^4.2.1"
+  }
+}
