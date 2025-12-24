@@ -13,11 +13,39 @@ A CLI-based multi-agent research tool powered by Google's Gemini API with native
 
 ## Prerequisites
 
-1. [Bun](https://bun.sh) v1.3.3 or later
-2. Authenticated with Gemini CLI:
-   ```bash
-   gemini auth login
-   ```
+### 1. Bun Runtime
+
+[Bun](https://bun.sh) v1.3.3 or later is required.
+
+```bash
+# macOS/Linux
+curl -fsSL https://bun.sh/install | bash
+
+# Windows (via PowerShell)
+powershell -c "irm bun.sh/install.ps1 | iex"
+```
+
+### 2. Gemini CLI
+
+The [Gemini CLI](https://github.com/anthropics/gemini-cli) is required for OAuth authentication.
+
+```bash
+# Install via npm
+npm install -g @anthropic-ai/gemini-cli
+
+# Or via bun
+bun install -g @anthropic-ai/gemini-cli
+```
+
+### 3. Authentication
+
+After installing Gemini CLI, authenticate with your Google account:
+
+```bash
+gemini auth login
+```
+
+This opens a browser for OAuth authentication. Your credentials are stored locally and used automatically by the agent.
 
 ## Installation
 
