@@ -27,14 +27,14 @@ powershell -c "irm bun.sh/install.ps1 | iex"
 
 ### 2. Gemini CLI
 
-The [Gemini CLI](https://github.com/anthropics/gemini-cli) is required for OAuth authentication.
+The [Gemini CLI](https://github.com/google-gemini/gemini-cli) is required for OAuth authentication.
 
 ```bash
 # Install via npm
-npm install -g @anthropic-ai/gemini-cli
+npm install -g @google/gemini-cli
 
 # Or via bun
-bun install -g @anthropic-ai/gemini-cli
+bun install -g @google/gemini-cli
 ```
 
 ### 3. Authentication
