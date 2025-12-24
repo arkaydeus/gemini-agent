@@ -45,3 +45,7 @@ Desktop.ini
 
 # Project specific
 .gemini-clipboard/
+
+output.md
+output/*
+!output/.gitkeep
